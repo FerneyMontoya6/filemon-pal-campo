@@ -1,0 +1,217 @@
+/* --------------------------------------------------------------------- preproces */
+:root {
+  /* colores */
+  --yellow: #d69d39;
+  --red: #ba5241;
+  --color_dark_blue: #13446b;
+  --color_light_blue: #449cc0;
+
+  /* box_shadow */
+  /* debugger_test */
+  --border_test: 1px solid red;
+  --normal_lateral_space: 0 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------- header section */
+
+nav {
+  display: flex;
+  padding: 1.6rem;
+  height: 10vh;
+  background-color: var(--color_dark_blue);
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+}
+
+nav ul li a:active {
+  text-decoration: underline;
+}
+
+nav ul li a:-webkit-any-link {
+  color: white;
+}
+
+/* --------------------------------------------------------------------- main section */
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 65vh;
+  padding: var(--normal_lateral_space);
+  margin: 2rem 0;
+}
+
+main h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+main .map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* --------------------------------------------------------------------- entidades alcaldia section */
+
+.entidades-alcaldia {
+  width: 100vw;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--normal_lateral_space);
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.entidades-alcaldia__casa-de-la-cultura {
+  width: 100%;
+}
+.entidades-alcaldia__biblioteca-el-santuario {
+  width: 100%;
+}
+
+.entidades-alcaldia__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  background-color: var(--color_light_blue);
+  border: none;
+  height: 10rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  padding: 0 10%;
+}
+
+.entidades-alcaldia__button:active {
+  background-color: #0b4a64;
+}
+
+.entidades-alcaldia__button h1 {
+  display: inline-block;
+  padding: 0 0.8rem;
+}
+
+/* --------------------------------------------------------------------- footer */
+footer {
+  position: relative;
+  display: flex;
+  min-height: 60rem;
+  width: 100%;
+  font-size: 50vw;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color_dark_blue);
+  color: black;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  width: 80%;
+  min-height: 60%;
+  background-color: white;
+}
+
+.logos p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.logos img {
+  width: 90%;
+  margin-top: 1rem;
+}
+
+.logos .logo__redes-sociales-minCultura,
+.logos .logo__redes-sociales-alcaldia {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.logos .logo__redes-sociales-minCultura a,
+.logos .logo__redes-sociales-alcaldia a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.logos span {
+  margin: 0 0.5rem;
+  color: var(--color_dark_blue);
+}
+
+.logos .logo__redes-sociales-minCultura a:-webkit-any-link,
+.logos .logo__redes-sociales-alcaldia a:-webkit-any-link {
+  color: var(--color_dark_blue);
+}
+
+.footer_container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
