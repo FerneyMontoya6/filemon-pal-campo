@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,40 +12,63 @@
   <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 1000px)">
   <title>Filemon Pal' Campo</title>
 </head>
+
 <body>
   <header>
     <nav>
       <ul>
-        <li><h2><a href="#casa-de-la-cultura">Biblioteca</a></h2></li>
-        <li><h2><a href="#biblioteca-el-santuario">Casa de la cultura</a></h2></li>
-      </ul>      
+        <li>
+          <h2><a href="#casa-de-la-cultura">Biblioteca</a></h2>
+        </li>
+        <li>
+          <h2><a href="#biblioteca-el-santuario">Casa de la cultura</a></h2>
+        </li>
+      </ul>
     </nav>
   </header>
-  
+
   <main>
     <article class="main__description">
       <h1>Filemón pal' campo</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quae maxime nisi molestias atque obcaecati facere quam velit dolorem id. Itaque corrupti quisquam repellendus delectus soluta corporis earum maxime. Quo! Lorem ipsum dolor sit amet consectetur.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus quae maxime nisi molestias atque
+        obcaecati facere quam velit dolorem id. Itaque corrupti quisquam repellendus delectus soluta corporis earum
+        maxime. Quo! Lorem ipsum dolor sit amet consectetur.</p>
     </article>
 
     <h1>Mapa de las veredas</h1>
 
     <picture class="map">
-      <source media="(min-width: 1000px)" srcset="./images/mapa_veredas-large.png">
-      <source media="(min-width: 600px)" srcset="./images/mapa_veredas-medium.png">
-      <img src="./images/mapa_veredas.png" alt="mapa de las veredas de El Santuario Antioquia" width="380">
+      <img src="./images/Rural_00001.svg" alt="mapa de las veredas de El Santuario Antioquia">
+      <input type="checkbox" id="btn-modal">
+      <label for="btn-modal" class="lbl-modal"></label>
+      <div class="modal">
     </picture>
+    <div class="contenedor">
+      <header>
+        <p>Vereda ejemplo</p>
+      </header>
+      <label for="btn-modal">X</label>
+      <div class="contenido">
+        <h3>
+          <!-- Agregar un titulo -->
+        </h3>
+        <p>
+          <!-- Agregar un mensaje -->
+        </p>
+      </div>
+    </div>
+    </div>
   </main>
 
-  
+
   <section class="entidades-alcaldia">
     <h1>Entidades de la alcaldía</h1>
     <div class="entidades-alcaldia__casa-de-la-cultura" id="casa-de-la-cultura">
-      <a class="entidades-alcaldia__button" >
+      <a class="entidades-alcaldia__button">
         <h2>Nuestra casa de la cultura</h2>
       </a>
     </div>
-  
+
     <div class="entidades-alcaldia__biblioteca-el-santuario" id="biblioteca-el-santuario">
       <a class="entidades-alcaldia__button">
         <h2>Nuestra biblioteca</h2>
@@ -54,56 +78,57 @@
 
 
   <footer>
-      <figure class="logos">
-        <section class="redes-sociales-ministerio__container">
-          <h3>Redes sociales ministerio de cultura</h3>
-          <img src="images/logos/Logo_Mincultura.png" alt="Logo ministerio de cultura de Colombia">
-          <div class="logo__redes-sociales-minCultura">
-            <a href="https://es-la.facebook.com/MinisterioCultura/">
-              <span class="icon-social-facebook-circular"></span>
-            </a>
-            <a href="https://twitter.com/mincultura?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-              <span class="icon-social-twitter-circular"></span>
-            </a>
-            <a href="https://www.instagram.com/mincultura/">
-              <span class="icon-instagram"></span>
-            </a>
-            <a href="https://www.youtube.com/user/Mincultura">
-              <span class="icon-youtube"></span>
-            </a>
-          </div>
-        </section>
-        <sention class="redes-sociales-alcaldia__container">
-          <h3>Redes sociales alcaldía de El Santuario</h3>
-           <img src="images/logos/logo_ElSantuario.png" alt="Logo alcaldía de El Santuario">
-           <div class="logo__redes-sociales-alcaldia">
-              <a href="https://www.facebook.com/elsantuarioAnt">
-                <span class="icon-social-facebook-circular"></span>
-              </a>
-              <a href="https://twitter.com/AlcSantuario">
-                <span class="icon-social-twitter-circular"></span>
-              </a>
-              <a href="https://www.instagram.com/alcaldiadeelsantuario/?igshid=197merijl59nf">
-                <span class="icon-instagram"></span>
-              </a>
-           </div>
-        </sention>
-        <section class="info-de-contacto">
-          <h3>
-            Alcaldía Municipal de El Santuario en Antioquia
-          </h3>
-          <p>
-            Dirección: Calle 50 Nº 49-71 Plaza Mayor José María Córdova <br>
-            Correo institucional: despachoalcaldia@elsantuario-antioquia.gov.co
-          </p>
-<!--           <p>
+    <figure class="logos">
+      <section class="redes-sociales-ministerio__container">
+        <h3>Redes sociales ministerio de cultura</h3>
+        <img src="images/logos/Logo_Mincultura.png" alt="Logo ministerio de cultura de Colombia">
+        <div class="logo__redes-sociales-minCultura">
+          <a href="https://es-la.facebook.com/MinisterioCultura/">
+            <span class="icon-social-facebook-circular"></span>
+          </a>
+          <a href="https://twitter.com/mincultura?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <span class="icon-social-twitter-circular"></span>
+          </a>
+          <a href="https://www.instagram.com/mincultura/">
+            <span class="icon-instagram"></span>
+          </a>
+          <a href="https://www.youtube.com/user/Mincultura">
+            <span class="icon-youtube"></span>
+          </a>
+        </div>
+      </section>
+      <sention class="redes-sociales-alcaldia__container">
+        <h3>Redes sociales alcaldía de El Santuario</h3>
+        <img src="images/logos/logo_ElSantuario.png" alt="Logo alcaldía de El Santuario">
+        <div class="logo__redes-sociales-alcaldia">
+          <a href="https://www.facebook.com/elsantuarioAnt">
+            <span class="icon-social-facebook-circular"></span>
+          </a>
+          <a href="https://twitter.com/AlcSantuario">
+            <span class="icon-social-twitter-circular"></span>
+          </a>
+          <a href="https://www.instagram.com/alcaldiadeelsantuario/?igshid=197merijl59nf">
+            <span class="icon-instagram"></span>
+          </a>
+        </div>
+      </sention>
+      <section class="info-de-contacto">
+        <h3>
+          Alcaldía Municipal de El Santuario en Antioquia
+        </h3>
+        <p>
+          Dirección: Calle 50 Nº 49-71 Plaza Mayor José María Córdova <br>
+          Correo institucional: despachoalcaldia@elsantuario-antioquia.gov.co
+        </p>
+        <!--           <p>
             ¡Parque educativo El Santuario, somos todos!
             Teléfono: 5460482
             parqueeducativoelsantuario@elsantuario.gov.co
           </p> -->
-        </section>
-      </figure>
+      </section>
+    </figure>
   </footer>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
