@@ -242,10 +242,12 @@ main article {
   top: 3rem;
   transform: translateY(-30%);
 }
+
 #btn-modal:checked ~ .modal .contenedor {
   transform: translateY(0%);
 }
 .contenedor header {
+  height: 4rem;
   padding: 1rem;
   background: var(--color_dark_blue);
   color: #fff;
@@ -283,6 +285,16 @@ main article {
   border-radius: 50%;
   cursor: pointer;
 }
+.contenedor__cuerpo {
+  height: 90%;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  overflow-y: scroll;
+}
+.contenedor__cuerpo h3 {
+  color: black;
+  font-weight: bold;
+}
 
 .map .map__valle-de-maria {
   top: 39%;
@@ -290,6 +302,31 @@ main article {
   width: 1rem;
   height: 1rem;
   left: 45%;
+}
+
+.contenedor__video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 2rem 0;
+}
+.contenedor__video .contenedor__video-valle-de-maria {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contenedor__pdf {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.contenedor__pdf .pdf {
+  width: 100%;
+  height: 30rem;
 }
 
 .map small {
@@ -353,6 +390,7 @@ main article {
 /* --------------------------------------------------------------------- footer */
 footer {
   position: relative;
+  z-index: -1;
   display: flex;
   min-height: 65rem;
   width: 100%;
