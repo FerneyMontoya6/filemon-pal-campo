@@ -1,0 +1,75 @@
+h1,
+h2 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+p {
+  font-size: 2rem;
+}
+
+.header {
+  height: 7rem;
+}
+.header img {
+  width: 4rem;
+}
+
+main .map {
+  flex-direction: column;
+  width: 73rem;
+}
+
+.lbl-modal {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 55%;
+  left: 47.5%;
+}
+
+.panel-btn {
+  width: 8rem;
+  height: 8rem;
+}
+
+.panel .menu a {
+  font-size: 3rem;
+  padding: 5rem;
+}
+
+.contenedor {
+  height: 75vh;
+  top: -1rem;
+}
+.contenedor header {
+  height: 5.5rem;
+}
+.contenedor label {
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.contenedor h4 {
+  color: black;
+}
+
+.logos {
+  width: 95%;
+}
+
+.redes-sociales-container {
+  display: flex;
+}
+.logos .logo__redes-sociales-minCultura a,
+.logos .logo__redes-sociales-alcaldia a {
+  font-size: 6rem;
+}

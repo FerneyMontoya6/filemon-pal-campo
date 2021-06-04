@@ -10,12 +10,7 @@
 
   --second-modal-color: rgba(34, 34, 34, 0.85);
 
-  /* box_shadow */
-  /* debugger_test */
-  --border_test: 1px solid red;
   --normal_lateral_space: 0 2rem;
-
-  --container-width: 1200px;
 }
 
 * {
@@ -36,14 +31,16 @@ html {
   min-height: 100%;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 3rem;
   margin: 1rem 0;
-}
-h2 {
-  font-size: 2.5rem;
+  text-align: center;
 }
 h3 {
+  font-size: 2.5rem;
+}
+h4 {
   font-size: 2rem;
   text-align: center;
   color: white;
@@ -62,8 +59,6 @@ img {
 html,
 body,
 ul {
-  margin: 0;
-  padding: 0;
   font-family: "Raleway", sans-serif;
 }
 
@@ -79,14 +74,14 @@ a {
 /* --------------------------------------------------------------------- header section */
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 998;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5rem;
-  position: sticky;
-  z-index: 998;
   padding: 1rem;
-  top: 0;
   background: var(--color_dark_blue);
   color: white;
   box-shadow: 0 1px 9px black;
@@ -101,14 +96,14 @@ header img {
 }
 
 .panel {
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: 998;
+  display: flex;
+  align-items: center;
   width: 100%;
   background-color: var(--second-modal-color);
   transition: transform 0.3s ease;
@@ -147,18 +142,18 @@ header img {
 }
 
 .menu {
-  width: inherit;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+  width: inherit;
   text-align: center;
 }
 
 .menu a {
-  padding: 3.5rem;
-  width: inherit;
   display: block;
+  width: inherit;
+  padding: 3.5rem;
   font-size: 2rem;
   color: white;
   transition: all 0.3s ease;
@@ -174,7 +169,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 65vh;
+  min-height: 55vh;
   padding: var(--normal_lateral_space);
   margin: 2rem 0;
 }
@@ -187,8 +182,9 @@ main h1 {
 main .map {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 32rem;
+  margin: 0 auto;
 }
 
 .map img {
@@ -205,7 +201,7 @@ main article {
 #seccion1,
 #seccion2,
 #seccion3 {
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
 /* -------------------------------------------------------------------------- ventanas modales */
@@ -232,7 +228,7 @@ main article {
   z-index: 1000;
 }
 .contenedor {
-  height: 40rem;
+  height: 50vh;
   margin: auto;
   background: #fff;
   box-shadow: 0.01rem 0.07rem 2.5rem rgba(0, 0, 0, 0.6);
@@ -259,6 +255,9 @@ main article {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.contenedor h4 {
+  color: black;
+}
 .contenido {
   width: 100%;
   padding: 1rem;
@@ -274,7 +273,7 @@ main article {
 }
 .lbl-modal {
   position: absolute;
-  top: 40%;
+  top: 62%;
   left: 46.5%;
   display: flex;
   width: 1.5rem;
@@ -346,16 +345,7 @@ main article {
   color: #b50706;
 }
 
-.map small {
-  position: absolute;
-  font-weight: bold;
-  width: 2.7rem;
-  font-size: 0.4rem;
-  top: 190%;
-  left: 5%;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
   .contenedor {
     width: 95%;
   }
@@ -372,10 +362,6 @@ main article {
   padding: var(--normal_lateral_space);
   text-align: center;
   margin-bottom: 5rem;
-}
-
-.entidades-alcaldia__casa-de-la-cultura {
-  width: 100%;
 }
 .entidades-alcaldia__biblioteca-el-santuario {
   width: 100%;
@@ -408,7 +394,7 @@ main article {
 footer {
   position: relative;
   display: flex;
-  min-height: 65rem;
+  min-height: 90rem;
   width: 100%;
   font-size: 50vw;
   justify-content: center;
@@ -453,6 +439,9 @@ footer {
 .info-de-contacto h3 {
   margin-bottom: 1rem;
 }
+.logos .info-de-contacto img {
+  width: 100%;
+}
 .info-de-contacto p {
   color: #dce6ee;
   text-align: center;
@@ -483,4 +472,14 @@ footer {
   align-items: center;
   padding: 10px;
   justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+  main .map {
+    width: 55rem;
+  }
+  .lbl-modal {
+    top: 57%;
+    left: 47.5%;
+  }
 }
