@@ -1,7 +1,7 @@
 # filemon-pal-campo 
 
 
-:warning: *Atención:* proyecto en proceso :construction:
+:warning: **Atención:** proyecto en proceso :construction:
 
 Este proyecto tiene como objetivo sintetizar y mostrar a la comunidad, mediante una web estática, los resultados obtenidos en el proyecto "Filemon pal Campo" 
 
