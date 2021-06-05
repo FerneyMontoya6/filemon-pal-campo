@@ -1,1 +1,90 @@
+.header {
+  height: 5rem;
+  justify-content: flex-start;
+}
+.header a img {
+  display: none;
+}
+.header a h3 {
+  display: initial;
+}
 
+.header img {
+  width: 3rem;
+}
+
+.panel-btn {
+  top: 0;
+  right: 1vw;
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.filemon-pal-campo {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+main .map {
+  width: 105rem;
+}
+.lbl-modal {
+  width: 3rem;
+  height: 3rem;
+  top: 54%;
+}
+.lbl-modal:hover {
+  background-color: #d88d0a;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.lbl-modal:active {
+  background-color: var(--color_dark_blue);
+}
+.icon-one-finger-click:hover {
+  font-size: 2.2rem;
+}
+
+.entidades-alcaldia__biblioteca-el-santuario {
+  width: 20%;
+}
+
+.entidades-alcaldia__button {
+  height: 8rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.entidades-alcaldia__button:hover {
+  background-color: #d88d0a;
+}
+.entidades-alcaldia__button:active {
+  background-color: var(--color_dark_blue);
+}
+.entidades-alcaldia__button h3 {
+  font-size: 2.5rem;
+}
+
+footer {
+  min-height: 45rem;
+  bottom: 0;
+}
+
+.logos {
+  flex-direction: initial;
+  align-items: initial;
+  padding-top: 0;
+}
+
+.logos h4 {
+  font-size: 2rem;
+}
+.logos p {
+  font-size: 1.5rem;
+}
+
+#seccion4 {
+  padding-top: 0;
+}

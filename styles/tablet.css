@@ -37,6 +37,10 @@ main .map {
   left: 47.5%;
 }
 
+.icon-one-finger-click {
+  font-size: 1.8rem;
+}
+
 .panel-btn {
   width: 8rem;
   height: 8rem;

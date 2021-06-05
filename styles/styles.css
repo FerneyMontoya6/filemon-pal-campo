@@ -91,6 +91,10 @@ header a {
   color: white;
 }
 
+header a h3 {
+  display: none;
+}
+
 header img {
   width: 3rem;
 }
@@ -191,6 +195,15 @@ main .map {
   width: 100%;
 }
 
+.icon-one-finger-click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+  color: white;
+}
+
 main article {
   display: flex;
   flex-direction: column;
@@ -200,8 +213,9 @@ main article {
 
 #seccion1,
 #seccion2,
-#seccion3 {
-  padding-top: 5rem;
+#seccion3,
+#seccion4 {
+  padding-top: 7rem;
 }
 
 /* -------------------------------------------------------------------------- ventanas modales */
