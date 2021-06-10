@@ -109,15 +109,8 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-<<<<<<< HEAD
-    .close{
-        top: 20px;
-        right: 20px;
-    }
-=======
   .close {
     top: 20px;
     right: 20px;
   }
->>>>>>> 7c09bf15079ad33218a714748f5d164154190a92
 }
