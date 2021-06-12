@@ -47,8 +47,21 @@ main .map {
   font-size: 2.2rem;
 }
 
+.contenedor {
+  width: 90rem;
+  height: 85vh;
+}
+
+.pdf {
+  padding: 0 0.5rem;
+}
+
+.entidades-alcaldia {
+  width: initial;
+}
+
 .entidades-alcaldia__biblioteca-el-santuario {
-  width: 20%;
+  width: 30%;
 }
 
 .entidades-alcaldia__button {
@@ -68,11 +81,12 @@ main .map {
 }
 
 footer {
-  min-height: 45rem;
+  min-height: 32rem;
   bottom: 0;
 }
 
 .logos {
+  width: 120rem;
   flex-direction: initial;
   align-items: initial;
   padding-top: 0;
@@ -84,7 +98,41 @@ footer {
 .logos p {
   font-size: 1.5rem;
 }
+.logos img {
+  margin: 2rem 0;
+}
+.logos .info-de-contacto img {
+  margin: 0.5rem 0 0 0;
+  width: 80%;
+}
 
 #seccion4 {
   padding-top: 0;
+}
+
+.redes-sociales-container {
+  min-height: 28rem;
+}
+
+.info-de-contacto,
+.redes-sociales-alcaldia__container,
+.redes-sociales-ministerio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-de-contacto p {
+  margin-top: 1rem;
+}
+
+.logo__redes-sociales-minCultura span:hover,
+.logo__redes-sociales-alcaldia span:hover {
+  color: #a3a3a3;
+}
+
+.line-decoration {
+  height: 25rem;
+  width: 0.2rem;
+  margin-right: 1rem;
+  background-color: white;
 }

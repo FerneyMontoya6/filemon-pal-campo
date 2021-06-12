@@ -70,6 +70,10 @@ main .map {
   width: 95%;
 }
 
+.logos .info-de-contacto img {
+  width: 80%;
+}
+
 .redes-sociales-container {
   display: flex;
 }
