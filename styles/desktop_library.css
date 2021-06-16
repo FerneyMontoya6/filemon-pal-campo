@@ -1,0 +1,138 @@
+.header {
+  height: 5rem;
+  justify-content: flex-start;
+}
+.header a img {
+  display: none;
+}
+.header a h3 {
+  display: initial;
+}
+
+.header img {
+  width: 3rem;
+}
+
+.panel-btn {
+  top: 0;
+  right: 1vw;
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.filemon-pal-campo {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+main .map {
+  width: 105rem;
+}
+.lbl-modal {
+  width: 3rem;
+  height: 3rem;
+  top: 54%;
+}
+.lbl-modal:hover {
+  background-color: #d88d0a;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.lbl-modal:active {
+  background-color: var(--color_dark_blue);
+}
+.icon-one-finger-click:hover {
+  font-size: 2.2rem;
+}
+
+.contenedor {
+  width: 90rem;
+  height: 85vh;
+}
+
+.pdf {
+  padding: 0 0.5rem;
+}
+
+.entidades-alcaldia {
+  width: initial;
+}
+
+.entidades-alcaldia__biblioteca-el-santuario {
+  width: 30%;
+}
+
+.entidades-alcaldia__button {
+  height: 8rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.entidades-alcaldia__button:hover {
+  background-color: #d88d0a;
+}
+.entidades-alcaldia__button:active {
+  background-color: var(--color_dark_blue);
+}
+.entidades-alcaldia__button h3 {
+  font-size: 2.5rem;
+}
+
+footer {
+  min-height: 32rem;
+  bottom: 0;
+}
+
+.logos {
+  width: 120rem;
+  flex-direction: initial;
+  align-items: initial;
+  padding-top: 0;
+}
+
+.logos h4 {
+  font-size: 2rem;
+}
+.logos p {
+  font-size: 1.5rem;
+}
+.logos img {
+  margin: 2rem 0;
+}
+.logos .info-de-contacto img {
+  margin: 0.5rem 0 0 0;
+  width: 80%;
+}
+
+#seccion4 {
+  padding-top: 0;
+}
+
+.redes-sociales-container {
+  min-height: 28rem;
+}
+
+.info-de-contacto,
+.redes-sociales-alcaldia__container,
+.redes-sociales-ministerio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-de-contacto p {
+  margin-top: 1rem;
+}
+
+.logo__redes-sociales-minCultura span:hover,
+.logo__redes-sociales-alcaldia span:hover {
+  color: #a3a3a3;
+}
+
+.line-decoration {
+  height: 25rem;
+  width: 0.2rem;
+  margin-right: 1rem;
+  background-color: white;
+}
