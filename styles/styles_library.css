@@ -14,11 +14,49 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100%;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+
+html,
+ul {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
 }
 
 /* ----------------------------------------------------------------- start header */
@@ -41,103 +79,55 @@ header a {
   color: white;
 }
 
+header a h3 {
+  display: none;
+}
+
 header img {
   width: 3rem;
-}
-.panel {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 998;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: var(--second-modal-color);
-  transition: transform 0.3s ease;
-  transform: translate(-100%, 0);
-}
-
-.panel.is-active {
-  transform: translate(0, 0);
-}
-
-.panel-btn {
-  position: fixed;
-  z-index: 999;
-  bottom: 2vh;
-  right: 2vw;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--yellow);
-  box-shadow: 0 0 10px black;
-}
-
-.hamburger-inner,
-.hamburger-inner:after,
-.hamburger-inner:before {
-  background-color: white;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner:after,
-.hamburger.is-active .hamburger-inner:before {
-  background-color: white;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  width: inherit;
-  text-align: center;
-}
-
-.menu a {
-  display: block;
-  width: inherit;
-  padding: 3.5rem;
-  font-size: 2rem;
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.menu a:hover {
-  font-weight: bold;
-  background-color: var(--color_dark_blue);
 }
 
 /* ----------------------------------------------------------------- finish header */
 
-h1 {
-  /*centra el título*/
-  font-weight: 400;
+.main-biblioteca {
+  padding: var(--normal_lateral_space);
+  margin-top: 4rem;
+}
+
+.koha-container {
   text-align: center;
-  padding: 20px 0;
-  font-size: 40px;
+  width: 80%;
+  min-height: 14rem;
+  margin: 4rem auto;
+  border: 0.3rem solid var(--color_dark_blue);
+  border-radius: 3rem;
+  padding: 1rem 0;
+}
+.koha-container h2 {
+  color: var(--color_dark_blue);
+  margin: 0;
+}
+.koha-container h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .linea {
   /*linea moradia debajo del título*/
-  background: var(--color_dark_blue);
-  height: 5px;
-  width: 100%;
   display: block;
+  background: var(--color_dark_blue);
+  height: 0.3rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   width: 95%;
   margin: auto;
-  grid-gap: 10px;
-  padding: 40px 0;
+  grid-gap: 1rem;
+  padding: 4rem 2rem;
   overflow: hidden;
 }
 
@@ -146,19 +136,19 @@ h1 {
   display: block;
   position: relative;
   overflow: hiden;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.5);
 }
 
 .galeria img {
   width: 100%;
   vertical-align: top;
-  height: 300px;
+  height: 25rem;
   object-fit: cover;
 }
 
 .galeria a:hover img {
   /*esto es para la animación cuando se hace hoover*/
-  filter: blur(2px);
+  filter: blur(0.2rem);
 }
 
 .light-box {
@@ -188,15 +178,15 @@ h1 {
 .close {
   display: block;
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 4rem;
+  right: 4rem;
   background: #851919;
   color: #fff;
   text-decoration: none;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   text-align: center;
-  line-height: 40px;
+  line-height: 4rem;
   border-radius: 50%;
 }
 
@@ -204,9 +194,9 @@ h1 {
   display: block;
   background: #851919;
   color: #fff;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
   text-decoration: none;
   text-align: center;
 }
