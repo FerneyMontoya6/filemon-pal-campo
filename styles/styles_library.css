@@ -1,0 +1,307 @@
+:root {
+  /* colores */
+  --yellow: #d69d39;
+  --red: #ba5241;
+  --color_dark_blue: #13446b;
+  --color_light_blue: #449cc0;
+
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+
+  --normal_lateral_space: 0 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+/* ----------------------------------------------------------------- start header */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  padding: 1rem;
+  background: var(--color_dark_blue);
+  color: white;
+  box-shadow: 0 1px 9px black;
+}
+
+header a {
+  color: white;
+}
+
+header img {
+  width: 3rem;
+}
+.panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--second-modal-color);
+  transition: transform 0.3s ease;
+  transform: translate(-100%, 0);
+}
+
+.panel.is-active {
+  transform: translate(0, 0);
+}
+
+.panel-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 2vh;
+  right: 2vw;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  box-shadow: 0 0 10px black;
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  background-color: white;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: inherit;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  width: inherit;
+  padding: 3.5rem;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  background-color: var(--color_dark_blue);
+}
+
+/* ----------------------------------------------------------------- finish header */
+
+h1 {
+  /*centra el título*/
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+}
+
+.linea {
+  /*linea moradia debajo del título*/
+  background: var(--color_dark_blue);
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.galeria > a {
+  /*esto es para el sobreado en el borde de las fotos*/
+  display: block;
+  position: relative;
+  overflow: hiden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.galeria img {
+  width: 100%;
+  vertical-align: top;
+  height: 300px;
+  object-fit: cover;
+}
+
+.galeria a:hover img {
+  /*esto es para la animación cuando se hace hoover*/
+  filter: blur(2px);
+}
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out; /*esta linea es para la animacion*/
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+.light-box img {
+  width: 75vw;
+  max-height: 70vh;
+}
+
+.light-box:target {
+  transform: scale(1);
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #851919;
+  color: #fff;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.next {
+  display: block;
+  background: #851919;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .close {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* ----------------------------------------------------------------- footer */
+footer {
+  position: relative;
+  display: flex;
+  min-height: 90rem;
+  width: 100%;
+  font-size: 50vw;
+  justify-content: center;
+  background-color: var(--color_dark_blue);
+  color: black;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  width: 80%;
+  margin-top: 4rem;
+}
+
+.logos p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.logos img {
+  width: 90%;
+  margin-top: 1rem;
+}
+
+.redes-sociales-ministerio__container,
+.redes-sociales-alcaldia__container {
+  text-align: center;
+}
+
+.logos .logo__redes-sociales-minCultura,
+.logos .logo__redes-sociales-alcaldia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.info-de-contacto {
+  color: white;
+}
+.info-de-contacto h3 {
+  margin-bottom: 1rem;
+}
+.logos .info-de-contacto img {
+  width: 100%;
+}
+.info-de-contacto p {
+  color: #dce6ee;
+  text-align: center;
+}
+
+.logos .logo__redes-sociales-minCultura a,
+.logos .logo__redes-sociales-alcaldia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.logos span {
+  margin: 0 0.5rem;
+  color: white;
+}
+
+.logos .logo__redes-sociales-minCultura a:-webkit-any-link,
+.logos .logo__redes-sociales-alcaldia a:-webkit-any-link {
+  color: white;
+}
+
+.footer_container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
