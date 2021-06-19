@@ -46,14 +46,12 @@ main .map {
 .icon-one-finger-click:hover {
   font-size: 2.2rem;
 }
-
+.light-box img {
+  max-height: 95vh;
+}
 .contenedor {
   width: 90rem;
   height: 85vh;
-}
-
-.pdf {
-  padding: 0 0.5rem;
 }
 
 .entidades-alcaldia {
@@ -111,7 +109,12 @@ footer {
 }
 
 .redes-sociales-container {
+  display: flex;
   min-height: 28rem;
+}
+
+.logo__redes-sociales-alcaldia {
+  margin-top: -1rem;
 }
 
 .info-de-contacto,

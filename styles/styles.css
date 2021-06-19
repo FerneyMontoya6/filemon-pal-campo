@@ -246,7 +246,7 @@ main article {
   margin: auto;
   background: #fff;
   box-shadow: 0.01rem 0.07rem 2.5rem rgba(0, 0, 0, 0.6);
-  transition: all 500ms ease;
+  transition: all 300ms ease;
   position: relative;
   top: 3rem;
   transform: translateY(-30%);
@@ -461,6 +461,10 @@ footer {
   text-align: center;
 }
 
+.logo__redes-sociales-alcaldia {
+  margin-top: -1rem;
+}
+
 .logos .logo__redes-sociales-minCultura a,
 .logos .logo__redes-sociales-alcaldia a {
   display: flex;
@@ -493,7 +497,22 @@ footer {
     width: 55rem;
   }
   .lbl-modal {
-    top: 57%;
+    top: 59%;
     left: 47.5%;
+  }
+  .logo__redes-sociales-alcaldia {
+    margin-top: -3rem;
+  }
+  .info-de-contacto {
+    text-align: center;
+  }
+  .logos .info-de-contacto img {
+    width: 70%;
+  }
+  .logos img {
+    width: 70%;
+  }
+  .redes-sociales-container {
+    text-align: center;
   }
 }

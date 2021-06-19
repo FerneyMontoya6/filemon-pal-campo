@@ -96,8 +96,8 @@ header img {
 
 .koha-container {
   text-align: center;
-  width: 80%;
-  min-height: 14rem;
+  max-width: 25rem;
+  min-height: 15rem;
   margin: 4rem auto;
   border: 0.3rem solid var(--color_dark_blue);
   border-radius: 3rem;
@@ -156,7 +156,7 @@ header img {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease-in-out; /*esta linea es para la animacion*/
+  transition: transform 250ms ease-in-out; /*esta linea es para la animacion*/
   width: 100%;
   height: 100vh;
   z-index: 1000;
@@ -180,7 +180,7 @@ header img {
   position: absolute;
   top: 4rem;
   right: 4rem;
-  background: #851919;
+  background: var(--color_dark_blue);
   color: #fff;
   text-decoration: none;
   width: 4rem;
@@ -192,7 +192,7 @@ header img {
 
 .next {
   display: block;
-  background: #851919;
+  background: var(--color_dark_blue);
   color: #fff;
   height: 3rem;
   width: 3rem;
@@ -294,4 +294,22 @@ footer {
   align-items: center;
   padding: 10px;
   justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+  .logo__redes-sociales-alcaldia {
+    margin-top: -3rem;
+  }
+  .info-de-contacto {
+    text-align: center;
+  }
+  .logos .info-de-contacto img {
+    width: 70%;
+  }
+  .logos img {
+    width: 70%;
+  }
+  .redes-sociales-container {
+    text-align: center;
+  }
 }
