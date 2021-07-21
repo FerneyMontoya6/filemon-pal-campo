@@ -167,7 +167,7 @@ header img {
 }
 
 .light-box img {
-  width: 75vw;
+  width: 54vw;
   max-height: 70vh;
 }
 
@@ -299,6 +299,9 @@ footer {
 @media only screen and (min-width: 600px) {
   .logo__redes-sociales-alcaldia {
     margin-top: -3rem;
+  }
+  .logo__redes-sociales-alcaldia-biblioteca {
+    margin-top: -1rem;
   }
   .info-de-contacto {
     text-align: center;

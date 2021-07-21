@@ -64,6 +64,7 @@ ul {
 
 p {
   font-size: 1.6rem;
+  margin: 1rem 0;
 }
 
 a {
@@ -500,9 +501,7 @@ footer {
     top: 59%;
     left: 47.5%;
   }
-  .logo__redes-sociales-alcaldia {
-    margin-top: -3rem;
-  }
+
   .info-de-contacto {
     text-align: center;
   }
