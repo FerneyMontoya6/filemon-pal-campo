@@ -297,6 +297,10 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+  .logos {
+    width: 65%;
+  }
+
   .logo__redes-sociales-alcaldia {
     margin-top: -3rem;
   }

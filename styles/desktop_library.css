@@ -13,6 +13,11 @@
   width: 3rem;
 }
 
+p {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
 .panel-btn {
   top: 0;
   right: 1vw;
@@ -35,17 +40,7 @@ main .map {
   height: 3rem;
   top: 54%;
 }
-.lbl-modal:hover {
-  background-color: #d88d0a;
-  width: 3.5rem;
-  height: 3.5rem;
-}
-.lbl-modal:active {
-  background-color: var(--color_dark_blue);
-}
-.icon-one-finger-click:hover {
-  font-size: 2.2rem;
-}
+
 .light-box img {
   max-height: 95vh;
 }
@@ -68,11 +63,9 @@ main .map {
   border-radius: 2rem;
   cursor: pointer;
 }
-.entidades-alcaldia__button:hover {
-  background-color: #d88d0a;
-}
+
 .entidades-alcaldia__button:active {
-  background-color: var(--color_dark_blue);
+  transform: scale(0.9);
 }
 .entidades-alcaldia__button h3 {
   font-size: 2.5rem;
@@ -112,10 +105,6 @@ footer {
   display: flex;
   min-height: 28rem;
 }
-
-/* .logo__redes-sociales-alcaldia {
-  margin-top: -1rem;
-} */
 
 .info-de-contacto,
 .redes-sociales-alcaldia__container,

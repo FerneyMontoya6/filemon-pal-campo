@@ -31,14 +31,33 @@ main .map {
 }
 
 .lbl-modal {
-  width: 2.5rem;
-  height: 2.5rem;
-  top: 55%;
-  left: 47.5%;
+  width: 3rem;
+  height: 3rem;
 }
 
-.icon-one-finger-click {
-  font-size: 1.8rem;
+.palmarcito {
+  top: 32%;
+  left: 54%;
+}
+
+.san-matias {
+  top: 38%;
+  left: 70%;
+}
+
+.la-paz {
+  top: 44%;
+  left: 66%;
+}
+
+.pavas {
+  top: 26.5%;
+  left: 24%;
+}
+
+.la-teneria {
+  top: 33.5%;
+  left: 34%;
 }
 
 .panel-btn {
@@ -66,8 +85,17 @@ main .map {
   color: black;
 }
 
+.entidades-alcaldia__button {
+  width: 40%;
+  padding: initial;
+}
+
+#seccion4 {
+  min-height: 120rem;
+}
+
 .logos {
-  width: 95%;
+  width: 65%;
 }
 
 .logos .info-de-contacto img {
@@ -76,8 +104,16 @@ main .map {
 
 .redes-sociales-container {
   display: flex;
+  flex-direction: column;
 }
-.logos .logo__redes-sociales-minCultura a,
-.logos .logo__redes-sociales-alcaldia a {
-  font-size: 6rem;
+.logos .redes-footer a {
+  font-size: 7rem;
+}
+
+.logo__redes-sociales-alcaldia {
+  margin-top: -1.5rem;
+}
+
+.logos_secretatia-de-cultura {
+  margin-top: -4rem;
 }

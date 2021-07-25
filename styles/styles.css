@@ -196,15 +196,6 @@ main .map {
   width: 100%;
 }
 
-.icon-one-finger-click {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 1.2rem;
-  color: white;
-}
-
 main article {
   display: flex;
   flex-direction: column;
@@ -228,32 +219,35 @@ main article {
   justify-content: center;
   align-items: center;
 }
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.15);
   transition: all 500ms ease;
   opacity: 0;
   visibility: hidden;
 }
-#btn-modal:checked ~ .modal {
+
+.btn-modal__input:checked ~ .modal {
   opacity: 1;
   visibility: visible;
   z-index: 1000;
 }
+
 .contenedor {
   height: 50vh;
   margin: auto;
   background: #fff;
-  box-shadow: 0.01rem 0.07rem 2.5rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0.01rem 0.01rem 1rem rgba(0, 0, 0, 0.1);
   transition: all 300ms ease;
   position: relative;
   top: 3rem;
   transform: translateY(-30%);
 }
 
-#btn-modal:checked ~ .modal .contenedor {
+.btn-modal__input:checked ~ .modal .contenedor {
   transform: translateY(0%);
 }
 .contenedor header {
@@ -277,27 +271,56 @@ main article {
   width: 100%;
   padding: 1rem;
 }
+
 .contenido h3 {
   margin-bottom: 1rem;
 }
-.contenido p {
-  margin-bottom: 0.07rem;
-}
-#btn-modal {
+
+.btn-modal__input {
   display: none;
 }
+
 .lbl-modal {
   position: absolute;
-  top: 64%;
-  left: 46.5%;
   display: flex;
   width: 1.5rem;
   height: 1.5rem;
-  background: var(--yellow);
+  background: url(../images/logos/boton-modal.png);
+  background-size: cover;
   box-shadow: 0 0 4px black;
   border-radius: 50%;
   cursor: pointer;
 }
+
+.lbl-modal:active {
+  transform: scale(0.9);
+}
+
+.palmarcito {
+  top: 43%;
+  left: 53.5%;
+}
+
+.san-matias {
+  top: 48.5%;
+  left: 70%;
+}
+
+.la-paz {
+  top: 53%;
+  left: 65%;
+}
+
+.pavas {
+  top: 38.5%;
+  left: 24%;
+}
+
+.la-teneria {
+  top: 44%;
+  left: 34%;
+}
+
 .contenedor__cuerpo {
   height: 90%;
   padding: 0 1rem;
@@ -309,7 +332,7 @@ main article {
   font-weight: bold;
 }
 
-.map .map__valle-de-maria {
+.map .map__palmarcito {
   top: 39%;
   position: absolute;
   width: 1rem;
@@ -325,7 +348,7 @@ main article {
   padding-bottom: 56.25%;
   margin: 2rem 0;
 }
-.contenedor__video .contenedor__video-valle-de-maria {
+.contenedor__video iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -406,6 +429,7 @@ main article {
 }
 
 /* --------------------------------------------------------------------- footer */
+
 footer {
   position: relative;
   display: flex;
@@ -436,17 +460,15 @@ footer {
   margin-top: 1rem;
 }
 
-.redes-sociales-ministerio__container,
-.redes-sociales-alcaldia__container {
+.redes-sociales-ministerio__container {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
-.logos .logo__redes-sociales-minCultura,
-.logos .logo__redes-sociales-alcaldia {
+.logos .redes-footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
 }
 .info-de-contacto {
   color: white;
@@ -462,12 +484,11 @@ footer {
   text-align: center;
 }
 
-.logo__redes-sociales-alcaldia {
-  margin-top: -1rem;
+.redes-sociales-container {
+  margin-bottom: 4rem;
 }
 
-.logos .logo__redes-sociales-minCultura a,
-.logos .logo__redes-sociales-alcaldia a {
+.logos .redes-footer a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -480,9 +501,20 @@ footer {
   color: white;
 }
 
+.logos span:active {
+  transform: scale(0.9);
+}
+
 .logos .logo__redes-sociales-minCultura a:-webkit-any-link,
 .logos .logo__redes-sociales-alcaldia a:-webkit-any-link {
   color: white;
+}
+
+.logo__redes-sociales-alcaldia {
+  margin-top: -1.5rem;
+}
+.logos_secretatia-de-cultura {
+  margin-top: -2rem;
 }
 
 .footer_container {
@@ -498,8 +530,8 @@ footer {
     width: 55rem;
   }
   .lbl-modal {
-    top: 59%;
-    left: 47.5%;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .info-de-contacto {
@@ -513,5 +545,35 @@ footer {
   }
   .redes-sociales-container {
     text-align: center;
+  }
+
+  .palmarcito {
+    top: 34%;
+    left: 54%;
+  }
+
+  .san-matias {
+    top: 40%;
+    left: 70%;
+  }
+
+  .la-paz {
+    top: 45.7%;
+    left: 66%;
+  }
+
+  .pavas {
+    top: 29%;
+    left: 24%;
+  }
+
+  .la-teneria {
+    top: 35.5%;
+    left: 34%;
+  }
+
+  .entidades-alcaldia__button {
+    width: 60%;
+    margin: 0 auto;
   }
 }
