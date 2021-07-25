@@ -93,8 +93,8 @@ footer {
   margin: 2rem 0;
 }
 .logos .info-de-contacto img {
-  margin: 0.5rem 0 0 0;
-  width: 80%;
+  margin: -1.1rem 0 0 0;
+  width: 65%;
 }
 
 #seccion4 {
@@ -118,8 +118,17 @@ footer {
 }
 
 .logo__redes-sociales-minCultura span:hover,
-.logo__redes-sociales-alcaldia span:hover {
+.logo__redes-sociales-alcaldia span:hover,
+.info-de-contacto span:hover {
   color: #a3a3a3;
+}
+
+.logo__redes-sociales-minCultura {
+  margin-top: 1.5rem;
+}
+
+.logo__redes-sociales-alcaldia {
+  margin-top: 0.5rem;
 }
 
 .line-decoration {

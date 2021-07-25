@@ -212,7 +212,11 @@ main article {
 
 /* -------------------------------------------------------------------------- ventanas modales */
 
-.modal {
+.modal1,
+.modal2,
+.modal3,
+.modal4,
+.modal5 {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -220,17 +224,25 @@ main article {
   align-items: center;
 }
 
-.modal {
+.modal1,
+.modal2,
+.modal3,
+.modal4,
+.modal5 {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.5);
   transition: all 500ms ease;
   opacity: 0;
   visibility: hidden;
 }
 
-.btn-modal__input:checked ~ .modal {
+#btn-modal__palmarcito:checked ~ .modal1,
+#btn-modal__la-teneria:checked ~ .modal2,
+#btn-modal__san-matias:checked ~ .modal3,
+#btn-modal__la-paz:checked ~ .modal4,
+#btn-modal__pavas:checked ~ .modal5 {
   opacity: 1;
   visibility: visible;
   z-index: 1000;
@@ -240,14 +252,18 @@ main article {
   height: 50vh;
   margin: auto;
   background: #fff;
-  box-shadow: 0.01rem 0.01rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.01rem 0.01rem 1rem rgba(0, 0, 0, 0.5);
   transition: all 300ms ease;
   position: relative;
   top: 3rem;
   transform: translateY(-30%);
 }
 
-.btn-modal__input:checked ~ .modal .contenedor {
+#btn-modal__palmarcito:checked ~ .modal1 .contenedor,
+#btn-modal__la-teneria:checked ~ .modal2 .contenedor,
+#btn-modal__san-matias:checked ~ .modal3 .contenedor,
+#btn-modal__la-paz:checked ~ .modal4 .contenedor,
+#btn-modal__pavas:checked ~ .modal5 .contenedor {
   transform: translateY(0%);
 }
 .contenedor header {
@@ -478,10 +494,6 @@ footer {
 }
 .logos .info-de-contacto img {
   width: 100%;
-}
-.info-de-contacto p {
-  color: #dce6ee;
-  text-align: center;
 }
 
 .redes-sociales-container {
