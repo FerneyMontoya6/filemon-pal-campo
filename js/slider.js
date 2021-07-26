@@ -39,6 +39,6 @@ prev();
 })
 
 
-/* setInterval(function() {
+setInterval(function() {
   next();
-}, 6000);  */
+}, 6000);
