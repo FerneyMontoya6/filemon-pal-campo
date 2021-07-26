@@ -25,6 +25,19 @@ p {
   width: 4rem;
 }
 
+.slider__btn {
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+}
+
+.slider__btn--right {
+  right: 1rem;
+}
+.slider__btn--left {
+  left: 1rem;
+}
+
 main .map {
   flex-direction: column;
   width: 73rem;

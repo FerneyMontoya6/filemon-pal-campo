@@ -18,27 +18,14 @@ p {
   line-height: 2.8rem;
 }
 
-.panel-btn {
-  top: 0;
-  right: 1vw;
-  width: 5rem;
-  height: 5rem;
-  background-color: transparent;
-  box-shadow: none;
-}
-
 .filemon-pal-campo {
   max-width: 120rem;
   margin: 0 auto;
 }
 
-main .map {
-  width: 105rem;
-}
-.lbl-modal {
-  width: 3rem;
-  height: 3rem;
-  top: 54%;
+.main-biblioteca {
+  display: flex;
+  align-items: center;
 }
 
 .light-box img {
@@ -47,6 +34,17 @@ main .map {
 .contenedor {
   width: 90rem;
   height: 85vh;
+}
+
+.koha-container {
+  width: 22rem;
+  height: 16rem;
+  margin: 3rem;
+  padding: 1.5rem 1.5rem;
+}
+
+.koha-wrapper a {
+  font-size: 2rem;
 }
 
 .entidades-alcaldia {
