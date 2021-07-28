@@ -50,7 +50,8 @@ ul {
   font-family: "Raleway", sans-serif;
 }
 
-p {
+p,
+strong {
   font-size: 1.6rem;
 }
 

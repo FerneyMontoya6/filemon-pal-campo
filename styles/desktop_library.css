@@ -13,7 +13,8 @@
   width: 3rem;
 }
 
-p {
+p,
+strong {
   font-size: 2rem;
   line-height: 2.8rem;
 }
