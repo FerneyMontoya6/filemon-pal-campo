@@ -182,7 +182,7 @@ header img {
 }
 .slider {
   display: flex;
-  width: 500%;
+  width: 900%;
   height: 100%;
   margin-left: -100%;
 }
@@ -220,6 +220,21 @@ header img {
 }
 .slider__btn--left {
   left: 0.5rem;
+}
+
+.button-container__actualitation {
+  display: flex;
+  justify-content: center;
+}
+
+.actualitation-button {
+  display: block;
+  width: 8rem;
+  height: 3rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0;
 }
 
 /* --------------------------------------------------------------------- main section */
