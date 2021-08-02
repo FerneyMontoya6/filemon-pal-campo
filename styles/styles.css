@@ -182,7 +182,7 @@ header img {
 }
 .slider {
   display: flex;
-  width: 900%;
+  width: 500%;
   height: 100%;
   margin-left: -100%;
 }
