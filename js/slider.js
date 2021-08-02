@@ -39,6 +39,3 @@ prev();
 })
 
 
-setInterval(function() {
-  next();
-}, 6000);
