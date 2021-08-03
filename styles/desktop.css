@@ -17,6 +17,10 @@ p {
   line-height: 2.8rem;
 }
 
+.actualitation-button {
+  display: none;
+}
+
 .panel-btn {
   top: 0;
   right: 1vw;
