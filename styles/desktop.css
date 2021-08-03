@@ -31,6 +31,23 @@ p {
   margin: 0 auto;
 }
 
+.slider__section {
+  display: initial;
+}
+
+#slider__section {
+  display: none;
+}
+
+.container-slider {
+  position: relative;
+  width: 90%;
+  max-width: 120rem;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 0 0.5rem #0b4a64, 0 1rem 2rem;
+}
+
 main .map {
   width: 105rem;
 }

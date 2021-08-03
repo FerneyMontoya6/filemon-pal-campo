@@ -178,7 +178,8 @@ header img {
   max-width: 120rem;
   margin: auto;
   overflow: hidden;
-  box-shadow: 0 0 0 0.5rem #0b4a64, 0 1rem 2rem;
+  color: transparent;
+  /* box-shadow: 0 0 0 0.5rem #0b4a64, 0 1rem 2rem; */
 }
 .slider {
   display: flex;
@@ -187,6 +188,15 @@ header img {
   margin-left: -100%;
 }
 .slider__section {
+  display: none;
+}
+#slider__section {
+  display: flex;
+  justify-content: center;
+}
+#slider__section img {
+  max-width: 90%;
+  text-align: center;
 }
 .slider__img {
   display: block;
