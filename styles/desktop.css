@@ -17,6 +17,10 @@ p {
   line-height: 2.8rem;
 }
 
+a {
+  font-size: 2rem;
+}
+
 .actualitation-button {
   display: none;
 }
