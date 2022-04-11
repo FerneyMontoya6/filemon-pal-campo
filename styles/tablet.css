@@ -17,6 +17,11 @@ h4 {
 p {
   font-size: 2rem;
 }
+p,
+strong, p strong {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
 
 .header {
   height: 7rem;
@@ -130,3 +135,16 @@ main .map {
 .logos_secretatia-de-cultura {
   margin-top: -4rem;
 }
+
+
+/*---------------------------------------------------------- filemon pal' barrio*/
+.filemon-info-container {
+  height: 70rem;
+}
+.pdf-filemon-barrio {
+    position: absolute;
+    left: 40%;
+    bottom: -90px;
+  }
+
+/*---------------------------------------------------------- end filemon pal' barrio*/

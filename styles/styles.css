@@ -63,11 +63,14 @@ ul {
 }
 
 p,
-strong {
+strong, p strong {
   font-size: 1.6rem;
   margin: 1rem 0;
 }
 
+small {
+  font-size: 1.4rem;
+}
 a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -80,7 +83,7 @@ a {
   top: 0;
   z-index: 998;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 5rem;
   padding: 1rem;
@@ -101,98 +104,104 @@ header img {
   width: 3rem;
 }
 
-.panel {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 998;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: var(--second-modal-color);
-  transition: transform 0.3s ease;
-  transform: translate(-100%, 0);
-}
+/* ------------------------------- nav section */
+  .nav-menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  .nav__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1rem;
+    right: 0;
+  }
+  .nav__toggle svg {
+    width: 4rem;
+    height: 3rem;
+    fill: white;
+  }
+  .nav__toggle .close-menu {
+    display: none;
+  }
 
-.panel.is-active {
-  transform: translate(0, 0);
-}
+  .nav__toggle .hamburger-menu {
+    display: block;
+  }
 
-.panel-btn {
-  position: fixed;
-  z-index: 999;
-  bottom: 2vh;
-  right: 2vw;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--yellow);
-  box-shadow: 0 0 10px black;
-}
+  .nav__toggle .close-menu,
+  .nav__toggle .hamburger-menu {
+    margin-top: 0.3rem;
+  }
 
-.hamburger-inner,
-.hamburger-inner:after,
-.hamburger-inner:before {
-  background-color: white;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner:after,
-.hamburger.is-active .hamburger-inner:before {
-  background-color: white;
-}
+  .nav__checkbox {
+    display: none;
+  }
 
-.menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  width: inherit;
-  text-align: center;
-}
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    height: inherit;
+    width: inherit;
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color_dark_blue);
+  }
 
-.menu a {
-  display: block;
-  width: inherit;
-  padding: 3.5rem;
-  font-size: 2rem;
-  color: white;
-  transition: all 0.3s ease;
-}
+  .nav__menu li {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+    list-style: none;
+  }
+  .nav__menu li a {
+    font-size: 2.6rem;
+    color: white;
+  }
+  .nav__menu li:hover {
+    transform: scale(1.2);
+  }
 
-.menu a:hover {
-  font-weight: bold;
-  background-color: var(--color_dark_blue);
-}
+  #nav__checkbox:checked ~ .nav-menu .nav__menu {
+    display: flex;
+  }
+  #nav__checkbox:checked ~ header .nav__toggle .close-menu {
+    display: block;
+  } 
+  #nav__checkbox:checked ~ header .nav__toggle .hamburger-menu {
+    display: none;
+  }
 
 /* ----------------------------------------------------------------------slider section */
 
 .container-slider {
   position: relative;
   width: 90%;
-  max-width: 120rem;
+  max-width: 95rem;
   margin: auto;
   overflow: hidden;
   color: transparent;
   /* box-shadow: 0 0 0 0.5rem #0b4a64, 0 1rem 2rem; */
 }
 .slider {
-  display: flex;
-  width: 900%;
+  display: none;
+  width: 500%;
   height: 100%;
   margin-left: -100%;
-}
-.slider__section {
-  display: none;
 }
 #slider__section {
   display: flex;
   justify-content: center;
+}
+.slider__section {
+  display: none;
 }
 #slider__section img {
   max-width: 90%;
@@ -265,6 +274,7 @@ main h1 {
 main .map {
   position: relative;
   display: flex;
+  padding-top: 4rem;
   flex-direction: column;
   width: 32rem;
   margin: 0 auto;
@@ -285,8 +295,32 @@ main article {
 #seccion2,
 #seccion3,
 #seccion4 {
-  padding-top: 7rem;
+  padding-top: 3rem;
 }
+
+/* ------------------------------------------------------------------------------ barrio section*/
+
+.banner-barrio-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.banner-barrio-container img {
+  border: 5px solid var(--color_dark_blue);
+}
+.h2-filemon-info {
+  margin-bottom: 0;
+}
+.filemon-info-container {
+  height: 60rem;
+}
+.pdf-filemon-barrio {
+    position: absolute;
+    left: 30%;
+    bottom: -90px;
+  }
+
+
+/* ------------------------------------------------------------------------------ end barrio section*/
 
 /* -------------------------------------------------------------------------- ventanas modales */
 

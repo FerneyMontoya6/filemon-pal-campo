@@ -1,4 +1,4 @@
-export default function hamburgerMenu(panelBtn, panel, menuLink) {
+/* export default function hamburgerMenu(panelBtn, panel, menuLink) {
   const d = document;
 
   d.addEventListener("click", (e) => {
@@ -12,4 +12,4 @@ export default function hamburgerMenu(panelBtn, panel, menuLink) {
       d.querySelector(panelBtn).classList.remove("is-active");      
     }
   });
-}
+} */

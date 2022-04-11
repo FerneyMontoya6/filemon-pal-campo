@@ -1,6 +1,6 @@
 .header {
   height: 5rem;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .header a img {
   display: none;
@@ -15,6 +15,16 @@
 
 p {
   line-height: 2.8rem;
+}
+
+p,
+strong, p strong {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+small {
+  font-size: 1.6rem;
 }
 
 a {
@@ -38,7 +48,9 @@ a {
   max-width: 120rem;
   margin: 0 auto;
 }
-
+.slider {
+  display: flex;
+}
 .slider__section {
   display: initial;
 }
@@ -102,7 +114,7 @@ main .map {
   width: initial;
 }
 
-.entidades-alcaldia__biblioteca-el-santuario {
+/* .entidades-alcaldia__biblioteca-el-santuario {
   width: 30%;
 }
 
@@ -119,7 +131,7 @@ main .map {
 }
 .entidades-alcaldia__button h3 {
   font-size: 2.5rem;
-}
+} */
 
 footer {
   min-height: 32rem;
@@ -191,3 +203,18 @@ footer {
   margin-right: 1rem;
   background-color: white;
 }
+
+
+/* ----------------------------------------------------------------- filemon pal' barrio */
+  .video-filemon-barrio iframe{
+    position: absolute;
+    left: 18%;
+    width: 65%;  
+    height: 65%;
+  }
+  .pdf-filemon-barrio {
+    position: absolute;
+    left: 45%;
+    bottom: 125px;
+  }
+/* ----------------------------------------------------------------- endfilemon pal' barrio */
